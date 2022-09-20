@@ -1,0 +1,35 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add --dev hardhat
+
+PATH: 
+  C:\Users\Marko\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Marko\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\Users\Marko\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Marko\AppData\Local\Microsoft\WindowsApps;C:\Users\Marko\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Marko\AppData\Local\GitHubDesktop\bin;C:\Users\Marko\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\Marko\Documents\GitHub\hardhat-simple-storage-fcc\package.json: Unexpected token } in JSON at position 84
+      at JSON.parse (<anonymous>)
+      at C:\Users\Marko\AppData\Roaming\nvm\v16.14.0\node_modules\yarn\lib\cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Marko\AppData\Roaming\nvm\v16.14.0\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\Marko\AppData\Roaming\nvm\v16.14.0\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "hardhat-simple-storage-fcc",
+    "version": "1.0.0",
+    "license": "MIT",
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
