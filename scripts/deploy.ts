@@ -1,5 +1,5 @@
 // Imports
-const { ethers, run, network } = require("hardhat")
+import { ethers, run, network} from "hardhat"
 
 // Main
 const main = async () => {
@@ -31,7 +31,7 @@ const main = async () => {
     console.log(`Updated value: ${updatedValue}`)
 }
 
-const verify = async (contractAddress, args) => {
+const verify = async (contractAddress:string, args:any[]) => {
     console.log("Verifying contract...")
 
     // Try/Catch to make sure contract is not already verified
@@ -40,7 +40,7 @@ const verify = async (contractAddress, args) => {
             address: contractAddress,
             constructorArguments: args,
         })
-    } catch (e) {
+    } catch (e: any) {
         if (e.message.toLowerCase().includes("already verified")) {
             console.log("Already verified")
         } else {
