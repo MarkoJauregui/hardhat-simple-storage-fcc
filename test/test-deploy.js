@@ -23,4 +23,18 @@ describe("SimpleStorage", () => {
         const currentValue = await simpleStorage.retrieve()
         assert.equal(currentValue.toString(), expectedValue)
     })
+
+    it("Should update when we call addPerson", async () => {
+        const expectedName = "Marko"
+        const expectedValue = "3"
+        const transactionResponse = await simpleStorage.addPerson(
+            expectedName,
+            expectedValue
+        )
+        await transactionResponse.wait(1)
+
+        const currentValue = await simpleStorage.people(0)
+        expect(currentValue.name).to.equal(expectedName)
+        expect(currentValue.favoriteNumber).to.equal(expectedValue)
+    })
 })
